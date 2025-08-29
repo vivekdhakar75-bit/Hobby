@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      background: #0077b6;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 40px;
+    }
+
+    .box {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .about {
+      text-align: center;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #0077b6;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎨 Simple Hobby Gallery</h1>
+    <p>Minimal style, created by me!</p>
+  </header>
+
+  <section class="gallery">
+    <div class="box" style="background:#ffadad">Box 1</div>
+    <div class="box" style="background:#ffd6a5">Box 2</div>
+    <div class="box" style="background:#fdffb6">Box 3</div>
+    <div class="box" style="background:#caffbf">Box 4</div>
+    <div class="box" style="background:#9bf6ff">Box 5</div>
+    <div class="box" style="background:#a0c4ff">Box 6</div>
+  </section>
+
+  <section class="about">
+    <h2>About This Project</h2>
+    <p>
+      This is a simple gallery made with HTML & CSS only.  
+      Instead of images, I used colorful boxes with text to keep it minimal and self-created.  
+      It’s fully responsive and adjusts to any screen size.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Simple Gallery Project | Created by Vivek</p>
+  </footer>
+
+</body>
+</html>
